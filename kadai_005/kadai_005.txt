@@ -1,0 +1,28 @@
+bonkohara_megumi@bonshiharameguminoMacBook-Pro Public % mkdir git_challenge
+bonkohara_megumi@bonshiharameguminoMacBook-Pro Public % ls
+dropbox         git_challenge   kadai_github    samurai         TEST
+bonkohara_megumi@bonshiharameguminoMacBook-Pro Public % cd git_challenge 
+bonkohara_megumi@bonshiharameguminoMacBook-Pro git_challenge % ls
+bonkohara_megumi@bonshiharameguminoMacBook-Pro git_challenge % echo "Hello, world!" >> hello_world.txt
+dquote> 
+bonkohara_megumi@bonshiharameguminoMacBook-Pro git_challenge % echo 'Hello, world!' >> hello_world.txt
+bonkohara_megumi@bonshiharameguminoMacBook-Pro git_challenge % ls
+hello_world.txt
+bonkohara_megumi@bonshiharameguminoMacBook-Pro git_challenge % git add hello_world.txt
+fatal: not a git repository (or any of the parent directories): .git
+bonkohara_megumi@bonshiharameguminoMacBook-Pro git_challenge % git init               
+Initialized empty Git repository in /Users/bonkohara_megumi/Public/git_challenge/.git/
+bonkohara_megumi@bonshiharameguminoMacBook-Pro git_challenge % echo 'Hello, world!' >> hello_world.txt
+bonkohara_megumi@bonshiharameguminoMacBook-Pro git_challenge % git add hello_world.txt
+bonkohara_megumi@bonshiharameguminoMacBook-Pro git_challenge % git commit -m "hello_world.txtを追加"
+[main (root-commit) c3e26d4] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+bonkohara_megumi@bonshiharameguminoMacBook-Pro git_challenge % echo "こんにちは、世界！" >> hello_world.txt
+bonkohara_megumi@bonshiharameguminoMacBook-Pro git_challenge % git add hello_world.txt              
+bonkohara_megumi@bonshiharameguminoMacBook-Pro git_challenge % git commit -m "日本語訳を追記"              
+[main fa15c9c] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+bonkohara_megumi@bonshiharameguminoMacBook-Pro git_challenge % git log --oneline
+fa15c9c (HEAD -> main) 日本語訳を追記
+c3e26d4 hello_world.txtを追加
